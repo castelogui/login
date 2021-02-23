@@ -131,7 +131,7 @@ Assim que é realizado o login aparece uma mensagem de confirmação:
 <h1 align="center">
     <img alt="Example" title="Example" src="https://github.com/castelogui/login/blob/main/images/login_sucesseful.png?raw=true" width="500px" />
 </h1>
-Logo depois de clicar em ok, a pagina é  redirecionada para o __Dashboard__ onde são apresentados todos os usuários cadastrados:
+Logo depois de clicar em ok, a pagina é  redirecionada para o /Dashboard onde são apresentados todos os usuários cadastrados:
 
 <h1 align="center">
     <img alt="Example" title="Example" src="https://github.com/castelogui/login/blob/main/images/users.jpeg?raw=true" width="500px" />
