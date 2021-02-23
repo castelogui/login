@@ -1,0 +1,66 @@
+.user-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li.user-item {
+  position: relative;
+  background: rgb(137, 139, 139);
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+  padding: 15px;
+  border: #333;
+  width: 400px;
+  height: 200px;
+}
+li.user-item header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+li.user-item header .user-info {
+  margin-left: 10px;
+}
+
+.user-info h3 {
+  display: block;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.user-info strong {
+  display: block;
+  font-size: 14px;
+  color: #5a2ea6;
+}
+li.user-item p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 20px;
+  margin: 10px;
+}
+
+li.user-item .link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.user-item a {
+  align-items: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid #333;
+  text-decoration: none;
+  background: linear-gradient(to right, #6278f3, #e7e419);
+}
+li.user-item a:hover {
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  text-decoration: solid;
+  background: linear-gradient(to right, #e7e419, #5b6fe2);
+}

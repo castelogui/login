@@ -1,12 +1,13 @@
-const express = require('express')
-const connection = require('./database/conection')
+const express = require("express");
+const connection = require("./database/conection");
 
-const UserController = require('./controllers/userController')
-const loginController = require('./controllers/loginController')
+const UserController = require("./controllers/userController");
+const loginController = require("./controllers/loginController");
 
-const routes = express.Router()
+const routes = express.Router();
 
-routes.get('/login/:username/:password', loginController.login)
-routes.get('/user/:id_user', UserController.oneUser)
+routes.post("/login", loginController.login);
+routes.get("/user/:id_user", UserController.oneUser);
+routes.get("/users", UserController.allUsers);
 
 module.exports = routes;
