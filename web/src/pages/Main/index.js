@@ -1,20 +1,25 @@
 import React from "react";
 
-import { Container } from "./styles";
+import { LeftSession, MainLogin, RightSession, TituloLogin } from "./styles";
+import Capa from './Components.js'
 
 import Login from "../LoginCard";
 
 function Main() {
   return (
     <>
-      <section>
-        <main>
-          <Container>
-            <Login></Login>
-          </Container>
-        </main>
-        <footer></footer>
-      </section>
+      <MainLogin>
+        <LeftSession>
+          <TituloLogin>
+            Seja bem vindo de volta!
+          </TituloLogin>
+          <Capa></Capa>
+        </LeftSession>
+        <RightSession>
+          <Login></Login>
+        </RightSession>
+      </MainLogin>
+      <footer></footer>
     </>
   );
 }

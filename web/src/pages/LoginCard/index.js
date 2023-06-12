@@ -5,10 +5,11 @@ import api from "../../services/api";
 
 import {
   Card,
-  Credencial,
-  Password,
+  InputUser,
   Welcome,
   Button,
+  TextField,
+  LabelLogin,
 } from "./styles";
 
 function Login() {
@@ -28,28 +29,33 @@ function Login() {
       localStorage.setItem("name_user", response.data.username);
 
       history.push("/dashboard");
-      
+
       return alert("Login bem sucessido");
     } catch (err) {
-
       return alert(`Erro ao realizar login. ${err}`);
     }
   }
 
   return (
     <Card>
+      <Welcome>Welcome Back</Welcome>
       <form onSubmit={handleLogon}>
-        <Welcome>Welcome Back</Welcome>
-        <Credencial
-          placeholder="Email/username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <Password
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+        <TextField>
+          <LabelLogin>Usuario</LabelLogin>
+          <InputUser
+            placeholder="Email/username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </TextField>
+        <TextField>
+          <LabelLogin>Senha</LabelLogin>
+          <InputUser
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </TextField>
         <Button type="submit">Sign in</Button>
       </form>
     </Card>

@@ -1,112 +1,68 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  position: absolute;
-  width: 300px;
-  height: 421px;
+  width: 60%;
+  display: flex;
   left: 40vmax;
   top: 10vmax;
-
-  background: linear-gradient(0deg, #e6eef8, #e6eef8), #cfd8dc;
-  box-shadow: -10px -10px 40px rgba(253, 255, 255, 0.8),
-    10px 10px 40px rgba(187, 195, 206, 0.6);
-  border-radius: 16px;
+  padding: 30px 35px;
+  border-radius: 25px;
+  flex-direction: column;
+  background-color: #2f2841;
+  box-shadow: 10px 10px 50px #00000086;
 `;
 
 export const Welcome = styled.text`
-  position: absolute;
-  width: 127px;
-  height: 21px;
-  left: 87px;
-  top: 24px;
-
-  font-family: IBM Plex Mono;
-  font-style: normal;
+  font-size: 3vw;
+  color: #ffc100;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 21px;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 1px;
-
-  /* blueGrey600 */
-
-  color: #546e7a;
+  padding: 2rem;
+  margin: 0 auto;
 `;
 
-export const Credencial = styled.input`
-  position: absolute;
-  width: 250px;
-  height: 48px;
-  left: 15px;
-  top: 141px;
-  background: linear-gradient(0deg, #e6eef8, #e6eef8), #cfd8dc;
-  box-shadow: inset -4px -4px 12px rgba(253, 255, 255, 0.8),
-    inset 4px 4px 12px rgba(187, 195, 206, 0.6);
-  border-radius: 16px;
+export const TextField = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+  width: 100%;
+`;
+
+export const LabelLogin = styled.label`
+  font-size: 1.5rem;
+  color: #fdfdfd;
+  padding: 0.5rem;
+`;
+
+export const InputUser = styled.input`
+  width: 100%;
   border: none;
-  font-family: IBM Plex Mono;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 18px;
-
-  padding-left: 18px;
-
-  letter-spacing: 1px;
-
-  color: #90a4ae;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: #514869;
+  color: #f0ffffde;
+  font-size: 1rem;
+  box-shadow: 0 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
 `;
-
-export const Password = styled.input`
-  position: absolute;
-  width: 252px;
-  height: 48px;
-  left: 15px;
-  top: 213px;
-  background: linear-gradient(0deg, #e6eef8, #e6eef8), #cfd8dc;
-  box-shadow: inset -4px -4px 12px rgba(253, 255, 255, 0.8),
-    inset 4px 4px 12px rgba(187, 195, 206, 0.6);
-  border-radius: 16px;
-  border: none;
-  font-family: IBM Plex Mono;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 18px;
-
-  padding-left: 18px;
-
-  letter-spacing: 1px;
-
-  color: #90a4ae;
-`;
-
 export const Button = styled.button`
-  position: absolute;
-  width: 113px;
-  height: 48px;
-  left: 94px;
-  top: 285px;
-
-  font-family: IBM Plex Mono;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 1px;
-
-  color: #ffffff;
-
-  /* deepPurple300 */
-
-  background: #9574cd;
-  box-shadow: -4px -4px 12px rgba(253, 255, 255, 0.8),
-    4px 4px 12px rgba(187, 195, 206, 0.6);
-  border-radius: 16px;
+  width: 100%;
+  padding: 0.8rem;
+  margin: 1rem auto;
   border: none;
+  border-radius: 15px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.09em;
   cursor: pointer;
-
+  background: linear-gradient(180deg, #ffc100 20%, #ff8a00 90%);
+  transition: font-size 0.1s ease-in-out, background 0.5s ease-in-out;
+  &:hover {
+    font-size: 1.5rem;
+    background: linear-gradient(0deg, #ffc100 20%, #ff8a00 90%);
+  }
 `;
