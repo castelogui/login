@@ -5,8 +5,7 @@ import api from "../../services/api";
 
 import {
   Card,
-  Credencial,
-  Password,
+  InputUser,
   Welcome,
   Button,
   TextField,
@@ -43,7 +42,7 @@ function Login() {
       <form onSubmit={handleLogon}>
         <TextField>
           <LabelLogin>Usuario</LabelLogin>
-          <Credencial
+          <InputUser
             placeholder="Email/username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
@@ -51,7 +50,7 @@ function Login() {
         </TextField>
         <TextField>
           <LabelLogin>Senha</LabelLogin>
-          <Password
+          <InputUser
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
