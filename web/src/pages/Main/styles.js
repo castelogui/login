@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-import Capa from "../../assets/images/capa.png";
-
-export const CapaLogin = () => (
-  <div>
-    <Capa />
-  </div>
-);
-
 export const MainLogin = styled.div`
   width: 100vw;
   height: 100vh;
@@ -23,9 +15,11 @@ export const LeftSession = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-`;
-
-export const RightSession = styled.div`
+  font-size: 1.5rem;
+  margin: 10rem 5rem;
+  `;
+  
+  export const RightSession = styled.div`
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -34,5 +28,8 @@ export const RightSession = styled.div`
 `;
 
 export const TituloLogin = styled.h1`
+  padding: 2rem;
+  margin: 2rem;
   color: #ffc100;
+  font-size: 3vw;
 `;

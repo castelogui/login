@@ -1,6 +1,7 @@
 import React from "react";
 
-import { CapaLogin, LeftSession, MainLogin, RightSession, TituloLogin } from "./styles";
+import { LeftSession, MainLogin, RightSession, TituloLogin } from "./styles";
+import Capa from './Components.js'
 
 import Login from "../LoginCard";
 
@@ -12,7 +13,7 @@ function Main() {
           <TituloLogin>
             Seja bem vindo de volta!
           </TituloLogin>
-          <CapaLogin></CapaLogin>
+          <Capa></Capa>
         </LeftSession>
         <RightSession>
           <Login></Login>
