@@ -48,7 +48,7 @@
 Apenas uma página de login com usuário e senha que após o login retorna todos os usuários cadastrados.
 
 <h1 align="center">
-    <img alt="Example" title="Example" src="https://github.com/castelogui/login/blob/main/images/login.jpeg?raw=true" width="500px" />
+    <img alt="Example" title="Example" src="https://github.com/castelogui/login/blob/main/web/src/pages/assets/images/login.png?raw=true" width="800px" />
 </h1>
 
 
